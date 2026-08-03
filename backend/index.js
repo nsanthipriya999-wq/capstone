@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import connectDB from './db.js';
 import washRoutes from './routes/user.js'
-
+  connectDB();
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -14,10 +14,11 @@ app.use(cors());
 app.use(express.json());
 
 //------------------------------- bring in the  Wash n Go  routes---------------------------------
-app.use('/api/washngo', washRoutes)
-
+app.use('/', (req,res)=>{
+    res.send("washnGo is running!");
+});
 // start the server
 app.listen(port, () => {
     console.log('Listening on port: ', port);
-    connectDB();
+  
 })
