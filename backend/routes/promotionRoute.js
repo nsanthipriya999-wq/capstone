@@ -4,9 +4,9 @@ import mongoose from 'mongoose';
 
 //------------GET-------Read All Promotions (getPromotions())--------------------
 // ----------------------http://localhost:3000/promotions--	--------------------
-export async function getServices(req, res) {
+export async function getPromotions(req, res) {
     try {                                       //retrieves  full document
-        const result = await Service.find();
+        const result = await Promotion.find();
 
 
         res.json(result);
@@ -14,8 +14,8 @@ export async function getServices(req, res) {
         res.status(500).json({ error: err.message });
     }
 };
-//-------------------Get one  Service (getServiceById())-----------------------
-// --------------------http://localhost:3000/services/:id-----------------------
+//-------------------Get one  Service (getPromotionById())-----------------------
+// --------------------http://localhost:3000/promotions/:id-----------------------
 
 export async function getServiceById(req, res) {
     try {

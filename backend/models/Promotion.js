@@ -18,6 +18,7 @@ const promotionSchema=new mongoose.Schema(
      type:Number,
      required:true,
      min:0,
+     max:100
     },
    startDate:{
 
