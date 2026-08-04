@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import car from "../assets/car.jpg"
+import car from "../assets/car.jpg";
+import {MdLogin} from "react-icons/md";
 
 
 //--------------Navigation Component--------------------
@@ -11,16 +12,20 @@ export default function Nav() {
         <div className="brand">
           
            <img src={car} 
-                alt="Wash n Go Logo" 
+                alt="Wash n Go Logo" width="20%" 
                 className="logo"/>
-
-          <h1 className="logo">
-                Wash N Go Car Wash
-          </h1>
+          <div className="brand-text">
+          <h2 className="logo">
+                Wash N Go 
+          </h2>
+          
           <p className="subtitle">
-              Where Clean Meets Shine✨
+          Where Clean Meets Shine✨
+          
           </p>
+          </div>
         </div>
+        
         {/* //-------------------Home ----------------------------- */}
 
         <div className="nav-links">
@@ -28,7 +33,7 @@ export default function Nav() {
             to="/"
             className="nav-link"
           >
-            🏠 Home
+            Home
           </Link>
           {/* //-------------------Services--------------------------- */}
 
@@ -37,7 +42,7 @@ export default function Nav() {
             className="nav-link"
 
           >
-            🧼Services
+            Services
           </Link>
 
           {/* //-------------------Promotions---------------------------- */}
@@ -46,7 +51,7 @@ export default function Nav() {
             className="nav-link"
 
           >
-            🎁Promotions
+            Promotions
           </Link>
 
           {/* //-------------------About--------------------------- */}
@@ -54,7 +59,7 @@ export default function Nav() {
             to="/about"
             className="nav-link"
           >
-            🚗About
+            About
           </Link>
 
           {/* //-------------------Contact Us---------------------------- */}
@@ -62,7 +67,7 @@ export default function Nav() {
             to="/contact"
             className="nav-link"
           >
-            📞Contact
+            Contact
           </Link>
 
           {/*----Login-------------------------------------------*/}
@@ -71,7 +76,8 @@ export default function Nav() {
             to="/login"
             className="nav-link"
           >
-            👤Login
+             <MdLogin size={15} style={{marginRight:"5px"}} />
+             Login
           </Link>
 
         </div>
