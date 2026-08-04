@@ -1,5 +1,5 @@
 //-----------Promotion  Controller Logic------------------------------
-import promotion from '../models/Promotion.js';
+import Promotion from '../models/Promotion.js';
 import mongoose from 'mongoose';
 
 //------------GET-------Read All Promotions (getPromotions())--------------------
@@ -30,6 +30,23 @@ export async function getServiceById(req, res) {
             return res.status(404).json({ message: "Service not found" });
         }
         res.json(result);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+};
+//-------------------Get   Service (getActivePromotions())-----------------------
+// --------------------http://localhost:3000/promotions/active-----------------------
+
+export async function getActivePromotions(req, res) {
+    try {
+
+        const today=new Date();
+        const promotions=await Promotion.find({active:true, startDate:{$lte:today}, endDate:{$gte:today},});
+        
+        if (!promotions) {
+            return res.status(404).json({ message: "No Active Promotions found" });
+        }
+        res.json(promotions);
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
