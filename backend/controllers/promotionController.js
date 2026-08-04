@@ -27,22 +27,22 @@ export async function getPromotionById(req, res) {
         }
         const result = await Promotion.findById(req.params.id);
         if (!result) {
-            return res.status(404).json({ message: "Service not found" });
+            return res.status(404).json({ message: "Promotion not found" });
         }
         res.json(result);
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 };
-//-------------------Get   Service (getActivePromotions())-----------------------
+//-------------------Get   Promotion (getActivePromotions())-----------------------
 // --------------------http://localhost:3000/promotions/active-----------------------
 
 export async function getActivePromotions(req, res) {
     try {
 
-        const today=new Date();
-        const promotions=await Promotion.find({active:true, startDate:{$lte:today}, endDate:{$gte:today},});
-        
+        const today = new Date();
+        const promotions = await Promotion.find({ active: true, startDate: { $lte: today }, endDate: { $gte: today }, });
+
         if (!promotions) {
             return res.status(404).json({ message: "No Active Promotions found" });
         }
@@ -69,17 +69,17 @@ export async function createPromotion(req, res) {
 //---------------PATCH------Update Promotion (updatePromotion())----------------------------------
 // -----------------------------http://localhost:3000/promotions/:id------------------------
 
-export async function updateService(req, res) {
+export async function updatePromotion(req, res) {
     try {
         if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
             return res.status(400).json({
-                message: "Invalid Service ID"
+                message: "Invalid Promotion ID"
             });
         }
         console.log(req.body);
         const result = await Promotion.findByIdAndUpdate(req.params.id, req.body, { returnDocument: 'after', runValidators: true, });
         if (!result) {
-            return res.status(404).json({ message: "Service not found" });
+            return res.status(404).json({ message: "Promotion not found" });
         }
         else
             return res.status(200).json(result);
@@ -98,12 +98,12 @@ export async function deletePromotion(req, res) {
         console.log(req.body);
         if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
             return res.status(400).json({
-                message: "Invalid Service ID"
+                message: "Invalid Promotion ID"
             });
         }
         const result = await Promotion.findByIdAndDelete(req.params.id);
         if (!result) {
-            return res.status(404).json({ message: "Service not found" });
+            return res.status(404).json({ message: "Promotion not found" });
         }
         else {
             res.status(200).json(result);
