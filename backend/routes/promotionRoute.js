@@ -1,9 +1,9 @@
-//-----------Service  Controller Logic------------------------------
-import Service from '../models/Service.js';
+//-----------Promotion  Controller Logic------------------------------
+import promotion from '../models/Promotion.js';
 import mongoose from 'mongoose';
 
-//------------GET-------Read All Services (getServices())--------------------
-// ----------------------http://localhost:3000/services	--------------------
+//------------GET-------Read All Promotions (getPromotions())--------------------
+// ----------------------http://localhost:3000/promotions--	--------------------
 export async function getServices(req, res) {
     try {                                       //retrieves  full document
         const result = await Service.find();
