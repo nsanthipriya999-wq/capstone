@@ -1,4 +1,4 @@
-export const adminMiddleware=(req,res,next)=>{
+ const adminMiddleware=(req,res,next)=>{
 
     //---if user is not admin returns an error------
 if(!req.user){
@@ -12,7 +12,7 @@ next();
 };
 
 
-
+export default adminMiddleware;
 
 
 
