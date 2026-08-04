@@ -21,10 +21,10 @@ router.post('/', authMiddleware,adminMiddleware,createService);
 
 // ----http://localhost:3000/updateService----------------
 
-router.post('/:id', authMiddleware,adminMiddleware,updateService);
+router.patch('/:id', authMiddleware,adminMiddleware,updateService);
 
 // ----http://localhost:3000/deleteService----------------
 
-router.post('/:id', authMiddleware,adminMiddleware,deleteService);
+router.delete('/:id', authMiddleware,adminMiddleware,deleteService);
 
 export default router;
