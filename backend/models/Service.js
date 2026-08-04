@@ -22,14 +22,14 @@ const serviceSchema=new mongoose.Schema(
    duration:{
 
     type:Number,
-    required:true,
+    min:1,
 
    },
 
    image:{
     type:String,
     default:"",
-
+    
    },
 
     active:{
