@@ -18,7 +18,7 @@ export default function Nav() {
                 Wash N Go Car Wash
           </h1>
           <p className="subtitle">
-              where Clean meets Shine
+              Where Clean Meets Shine✨
           </p>
         </div>
         {/* //-------------------Home ----------------------------- */}
