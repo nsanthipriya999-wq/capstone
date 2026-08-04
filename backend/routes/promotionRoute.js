@@ -11,8 +11,9 @@ const router = express.Router();
 // ----http://localhost:3000/getPromotions--or getPromotionById----or getActivePromotions----------
 
 router.get("/",getPromotions);
-router.get("/:id",getPromotionById);
 router.get("/active",getActivePromotions);
+router.get("/:id",getPromotionById);
+
 
 
 
