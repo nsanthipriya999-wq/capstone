@@ -4,35 +4,34 @@ import mongoose from 'mongoose';
 
 //------------GET-------Read All Services (getServices())--------------------
 // ----------------------http://localhost:3000/services	--------------------
-export async function getServices(req,res){
-    try{                                       //retrieves  full document
-        const result=await Service.find();
-        
-                            
+export async function getServices(req, res) {
+    try {                                       //retrieves  full document
+        const result = await Service.find();
+
+
         res.json(result);
-    }catch(err){
-        res.status(500).json({error:err.message});
+    } catch (err) {
+        res.status(500).json({ error: err.message });
     }
 };
 //-------------------Get one  Service (getServiceById())-----------------------
 // --------------------http://localhost:3000/services/:id-----------------------
 
-export async function getServiceById(req,res){
-    try{
+export async function getServiceById(req, res) {
+    try {
 
-        if(!mongoose.Types.ObjectId.isValid(req.params.id)){
-           return res.status(400).json({
-        message:"Invalid Service ID"
-    });
-}
-        const result=await Service.findById(req.params.id);
-        if(!result)
-        {
-            return res.status(404).json({message:"Service not found"});
+        if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({
+                message: "Invalid Service ID"
+            });
+        }
+        const result = await Service.findById(req.params.id);
+        if (!result) {
+            return res.status(404).json({ message: "Service not found" });
         }
         res.json(result);
-    }catch(err){
-        res.status(500).json({error:err.message});
+    } catch (err) {
+        res.status(500).json({ error: err.message });
     }
 };
 //-------------------POST----create new Service createService()---------------------
@@ -55,14 +54,18 @@ export async function createService(req, res) {
 
 export async function updateService(req, res) {
     try {
-
-        console.log(req.body);
-        const result = await Service.findByIdAndUpdate(req.params.id,req.body,{returnDocument:'after',runValidators:true,});
-        if (!result) {
-            return res.status(404).json({message:"Service not found"});
+        if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({
+                message: "Invalid Service ID"
+            });
         }
-        else 
-          return res.status(200).json(result);
+        console.log(req.body);
+        const result = await Service.findByIdAndUpdate(req.params.id, req.body, { returnDocument: 'after', runValidators: true, });
+        if (!result) {
+            return res.status(404).json({ message: "Service not found" });
+        }
+        else
+            return res.status(200).json(result);
 
     } catch (err) {
 
@@ -76,16 +79,16 @@ export async function updateService(req, res) {
 export async function deleteService(req, res) {
     try {
         console.log(req.body);
-        if(!mongoose.Types.ObjectId.isValid(req.params.id)){
-           return res.status(400).json({
-        message:"Invalid Service ID"
-    });
+        if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({
+                message: "Invalid Service ID"
+            });
         }
         const result = await Service.findByIdAndDelete(req.params.id);
         if (!result) {
-            return res.status(404).json({message:"Service not found"});
+            return res.status(404).json({ message: "Service not found" });
         }
-        else{
+        else {
             res.status(200).json(result);
         }
     } catch (err) {
