@@ -43,7 +43,7 @@ export async function getActivePromotions(req, res) {
         const today = new Date();
         const promotions = await Promotion.find({ active: true, startDate: { $lte: today }, endDate: { $gte: today }, });
 
-        if (!promotions) {
+        if (promotions.length==0) {
             return res.status(404).json({ message: "No Active Promotions found" });
         }
         res.json(promotions);
@@ -56,8 +56,11 @@ export async function getActivePromotions(req, res) {
 
 export async function createPromotion(req, res) {
     try {
-
-        console.log(req.body);
+        const{startDate,endDate}=req.body
+        if(new Date(endDate)<=new Date(startDate)){
+             return res.status(400).json({ message: "End Date must be after Start Date " });
+        }
+        //console.log(req.body);
         const result = await Promotion.create(req.body);
         return res.status(201).json(result);
 
@@ -77,12 +80,17 @@ export async function updatePromotion(req, res) {
             });
         }
         console.log(req.body);
-        const result = await Promotion.findByIdAndUpdate(req.params.id, req.body, { returnDocument: 'after', runValidators: true, });
-        if (!result) {
+        const oldPromotion = await Promotion.findById(req.params.id);
+                if (!oldPromotion) {
             return res.status(404).json({ message: "Promotion not found" });
         }
-        else
-            return res.status(200).json(result);
+         const startDate=req.body.startDate||oldPromotion.startDate;
+         const endDate=req.body.endDate||oldPromotion.endDate;
+          if(new Date(endDate)<=new Date(startDate)){
+             return res.status(400).json({ message: "End Date must be after Start Date " });
+        }
+        const newPromotion=await Promotion.findByIdAndUpdate(req.params.id,req.body,{returnDocument:'after',runValidators:true,});
+        res.status(200).json(newPromotion);
 
     } catch (err) {
 
