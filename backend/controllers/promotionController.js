@@ -14,7 +14,7 @@ export async function getPromotions(req, res) {
         res.status(500).json({ error: err.message });
     }
 };
-//-------------------Get one  Service (getPromotionById())-----------------------
+//-------------------Get one  Promotion By Id (getPromotionById())-----------------------
 // --------------------http://localhost:3000/promotions/:id-----------------------
 
 export async function getPromotionById(req, res) {
