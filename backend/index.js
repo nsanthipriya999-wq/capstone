@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import connectDB from './db.js';
 import userRoute from './routes/userRoute.js'
+import serviceRoute from './routes/serviceRoute.js'
   connectDB();
 const app = express();
 const port = process.env.PORT || 3000;
@@ -19,6 +20,7 @@ app.get('/', (req,res)=>{
     res.send("washnGo is running!");
 });
 
+app.use("/services",serviceRoute)
 
 // start the server
 app.listen(port, () => {
