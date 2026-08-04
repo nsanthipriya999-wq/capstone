@@ -1,5 +1,5 @@
 //-----------------------ContactUs Page---------------------------------------
-export default function Contactus()
+export default function Contact()
 {
     return(
         <div className="contactus-container">
