@@ -59,10 +59,19 @@ export default function Nav() {
 
           {/* //-------------------Contact Us---------------------------- */}
           <Link
-            to="/contactus"
+            to="/contact"
             className="nav-link"
           >
-            📞ContactUs
+            📞Contact
+          </Link>
+
+          {/*----Login-------------------------------------------*/}
+            {/* //-------------------Contact Us---------------------------- */}
+          <Link
+            to="/login"
+            className="nav-link"
+          >
+            👤Login
           </Link>
 
         </div>
