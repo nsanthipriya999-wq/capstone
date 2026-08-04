@@ -1,3 +1,4 @@
+//-----------------------db.js------------------------------------
 import mongoose from 'mongoose';
 async function connectDB(){
     try{
