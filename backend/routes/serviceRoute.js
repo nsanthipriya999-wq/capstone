@@ -19,9 +19,12 @@ router.get("/:id",getServiceById);
 
 router.post('/', authMiddleware,adminMiddleware,createService);
 
-// ----http://localhost:3000/login----------------
+// ----http://localhost:3000/updateService----------------
 
-router.post('/login', loginUser)
+router.post('/:id', authMiddleware,adminMiddleware,updateService);
 
+// ----http://localhost:3000/deleteService----------------
+
+router.post('/:id', authMiddleware,adminMiddleware,deleteService);
 
 export default router;
