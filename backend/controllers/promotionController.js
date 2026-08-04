@@ -17,15 +17,15 @@ export async function getPromotions(req, res) {
 //-------------------Get one  Service (getPromotionById())-----------------------
 // --------------------http://localhost:3000/promotions/:id-----------------------
 
-export async function getServiceById(req, res) {
+export async function getPromotionById(req, res) {
     try {
 
         if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
             return res.status(400).json({
-                message: "Invalid Service ID"
+                message: "Invalid Promotion ID"
             });
         }
-        const result = await Service.findById(req.params.id);
+        const result = await Promotion.findById(req.params.id);
         if (!result) {
             return res.status(404).json({ message: "Service not found" });
         }
@@ -51,14 +51,14 @@ export async function getActivePromotions(req, res) {
         res.status(500).json({ error: err.message });
     }
 };
-//-------------------POST----create new Service createService()---------------------
-// -------------------------http://localhost:3000/services---------------------- 
+//-------------------POST----create new Promotion createPromotion()---------------------
+// -------------------------http://localhost:3000/promotions---------------------- 
 
-export async function createService(req, res) {
+export async function createPromotion(req, res) {
     try {
 
         console.log(req.body);
-        const result = await Service.create(req.body);
+        const result = await Promotion.create(req.body);
         return res.status(201).json(result);
 
     } catch (err) {
@@ -66,8 +66,8 @@ export async function createService(req, res) {
         return res.status(400).json({ error: err.message });
     }
 };
-//---------------PATCH------Update Service  (updateService())----------------------------------
-// -----------------------------http://localhost:3000/services/:id------------------------
+//---------------PATCH------Update Promotion (updatePromotion())----------------------------------
+// -----------------------------http://localhost:3000/promotions/:id------------------------
 
 export async function updateService(req, res) {
     try {
@@ -77,7 +77,7 @@ export async function updateService(req, res) {
             });
         }
         console.log(req.body);
-        const result = await Service.findByIdAndUpdate(req.params.id, req.body, { returnDocument: 'after', runValidators: true, });
+        const result = await Promotion.findByIdAndUpdate(req.params.id, req.body, { returnDocument: 'after', runValidators: true, });
         if (!result) {
             return res.status(404).json({ message: "Service not found" });
         }
@@ -91,9 +91,9 @@ export async function updateService(req, res) {
 
 };
 
-//--------DELETE--------Delete Service function (deleteService())-------------------------
-// -------------------http://localhost:3000/services/:id-----------------------------------
-export async function deleteService(req, res) {
+//--------DELETE--------Delete Promotion function (deletePromotion())-------------------------
+// -------------------http://localhost:3000/promotions/:id-----------------------------------
+export async function deletePromotion(req, res) {
     try {
         console.log(req.body);
         if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
@@ -101,7 +101,7 @@ export async function deleteService(req, res) {
                 message: "Invalid Service ID"
             });
         }
-        const result = await Service.findByIdAndDelete(req.params.id);
+        const result = await Promotion.findByIdAndDelete(req.params.id);
         if (!result) {
             return res.status(404).json({ message: "Service not found" });
         }
