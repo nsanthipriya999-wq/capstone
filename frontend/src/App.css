@@ -266,3 +266,8 @@ border-radius: 25px;
   font-size: 2rem;
   font-weight: bold;
 }
+
+.ew-widget {
+  width: 100%;
+  max-width: 600px;
+}

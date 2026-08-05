@@ -1,3 +1,4 @@
+import EverWashWidget from "../components/EverWashWidget";
 export default function Services(){
 
   return(

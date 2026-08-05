@@ -54,13 +54,7 @@ export default function Nav() {
             Promotions
           </Link>
 
-          {/* //-------------------About--------------------------- */}
-          <Link
-            to="/about"
-            className="nav-link"
-          >
-            About
-          </Link>
+          
 
           {/* //-------------------Contact Us---------------------------- */}
           <Link
@@ -69,9 +63,16 @@ export default function Nav() {
           >
             Contact
           </Link>
+          {/* //-------------------SignUp--------------------------- */}
+          <Link
+            to="/signup"
+            className="nav-link"
+          >
+            SignUp
+          </Link>
 
           {/*----Login-------------------------------------------*/}
-            {/* //-------------------Contact Us---------------------------- */}
+           
           <Link
             to="/login"
             className="nav-link"

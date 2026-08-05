@@ -3,7 +3,7 @@ import Nav from "./components/Nav.jsx"
 import Home from "./pages/Home.jsx"
 import Services from "./pages/Services.jsx"
 import Promotions from "./pages/Promotions.jsx"
-import About from "./pages/About.jsx"
+import SignUp from "./pages/SignUp.jsx"
 import Contact from "./pages/Contact.jsx"
 import Notfound from './pages/Notfound.jsx';
 import Footer from './components/Footer.jsx';
@@ -20,10 +20,14 @@ export default function App(){
         <Route path="/" element={<Home />}/>
         <Route path="/services" element={<Services />}/>
         <Route path="/promotions" element={<Promotions />}/>
-        <Route path="/about" element={<About />}/>
+        
         <Route path="/contact" element={<Contact />}/>
+        <Route path="/signup" element={<SignUp />}/>
         <Route path="/login" element={<Login />}/>
+        <Route path="/admin-dashboard" element={<AdminDashboard />}/>
+        <Route path="/user-dashboard" element={<UserDashboard />}/>
         <Route path="/*" element={<Notfound />}/>
+
       </Routes>
       </div>
      <Footer />
