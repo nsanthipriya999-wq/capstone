@@ -6,7 +6,8 @@ import Promotions from "./pages/Promotions.jsx"
 import About from "./pages/About.jsx"
 import Contact from "./pages/Contact.jsx"
 import Notfound from './pages/Notfound.jsx';
-import Footer from './components/Footer.jsx'
+import Footer from './components/Footer.jsx';
+import Login from './pages/Login.jsx';
 import { Routes, Route } from "react-router";
 import "./App.css"
 
@@ -21,6 +22,7 @@ export default function App(){
         <Route path="/promotions" element={<Promotions />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>
+        <Route path="/login" element={<Login />}/>
         <Route path="/*" element={<Notfound />}/>
       </Routes>
       </div>
