@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <div className="home">
         
-            {/*----Hero Section--------*/}
+            {/*----------------------------------Hero Section--------------------------*/}
             <section className="hero">
                 <img src={cw} alt="car wash image" className="hero-image"/>
                <div className="hero-content">
@@ -88,7 +88,7 @@ export default function Home() {
                     </section>
 
 
-                    {/*sections*/}
+                    {/*-------------------------------sections---------------------------------------*/}
                     <section className="home-section">
                         <h2>Our Services</h2>
 
@@ -135,7 +135,7 @@ export default function Home() {
 
                     </section>
 
-                    {/*conatct*/}
+                    {/*---------------------contact---------------------------*/}
 
                     <section className="home-section">
 
