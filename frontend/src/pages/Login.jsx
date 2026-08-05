@@ -38,6 +38,30 @@ try{
       
 
 
-        <div>Login</div>
-    )
+       <form onSubmit={handleLogin}>
+
+      <input
+        type="email"
+        value={email}
+        onChange={(e)=>setEmail(e.target.value)}
+      />
+
+
+      <input
+        type="password"
+        value={password}
+        onChange={(e)=>setPassword(e.target.value)}
+      />
+
+
+      <button>
+        Login
+      </button>
+
+      {error && <p>{error}</p>}
+
+    </form>
+  );
+
 }
+    
