@@ -1,8 +1,18 @@
-export default function About(){
-    return(
-      <div>hi</div>
-       
+export default function SignUp() {
+  return (
+    <div className="signup-container">
+
+      <h2>Welcome to Wash N Go</h2>
+      <p>Dear Customers, please click on the link below to join/login Membership</p>
+
+      <a href="https://app.everwash.com/#register"
+        target="_blank"
+        rel="nopener no referer" >
+
+        EverWash App </a>
+
+    </div>
 
 
-    )
+  )
 }
