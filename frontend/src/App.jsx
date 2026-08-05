@@ -9,6 +9,8 @@ import Notfound from './pages/Notfound.jsx';
 import Footer from './components/Footer.jsx';
 import Login from './pages/Login.jsx';
 import { Routes, Route } from "react-router";
+import AdminDashboard from './pages/AdminDashboard.jsx';
+import UserDashboard from './pages/UserDashboard.jsx';
 import "./App.css"
 
 export default function App(){
