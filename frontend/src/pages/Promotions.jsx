@@ -3,6 +3,7 @@
 import {useState,useEffect} from "react";
 import {Link} from "react-router";
 import { getActivePromotion } from "../services/api";
+import p from "../assets/p.jpeg";
 export default function Promotions() {
   const [promotion, setPromotion] = useState(null);
   
@@ -27,6 +28,7 @@ export default function Promotions() {
 
       {promotion ? (
         <div className="promotion-card">
+          <img src={p} alt="promotion image" className="hero-image"/>
           <h3>{promotion.title}</h3>
           <p>{promotion.description}</p>
           <h2 className="discount">
