@@ -85,20 +85,26 @@
    background-color: #F0F9FF;
    min-height: 100vh;
    display: flex;
+   flex-direction:column;
    justify-content: center;
    align-items: flex-start;
    padding-top: 100px;
+   gap:10px;
  }
 
  .contactus-card {
    background: #FFFFFF;
-   width: 500px;
+   width: 450px;
+   max-width:90%;
    padding: 35px;
-   border-radius: 20px;
-   text-align: center;
+   border-radius:20px;
+   text-align:center;
+   margin:auto auto;;
+   
+   
+   
    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15);
  }
-
 
 
 
@@ -107,9 +113,18 @@
  }
 
  .contactus-card p {
-   line-height: 1.6;
+   height:100%;
+
+   width:100%;
    color: #374151
  }
+
+ .contact-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+}
 
  /* ------------------------Footer----------------------------------------------- */
 
@@ -267,7 +282,17 @@ border-radius: 25px;
   font-weight: bold;
 }
 
-.ew-widget {
+.everwash-widget {
   width: 100%;
   max-width: 600px;
+ 
 }
+ /* .everwash-widget{
+  max-width:700px;
+  margin:0 auto;
+  background:#fff;
+  border-radius:15px;
+  padding:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1); 
+}
+/*-----------------------------Contact page----------------------------------*/
