@@ -15,9 +15,9 @@ export default function Nav() {
                 alt="Wash n Go Logo" width="20%" 
                 className="logo"/>
           <div className="brand-text">
-          <h2 className="logo">
+          <h1 className="logo">
                 Wash N Go 
-          </h2>
+          </h1>
           
           <p className="subtitle">
           Where Clean Meets Shine✨

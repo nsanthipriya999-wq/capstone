@@ -46,19 +46,19 @@
   flex-direction: column;
   justify-content:center;
  }
- .brand-text h2 {
+ .brand-text h1 {
   margin:0;
-  white-space: nowrap;
+  white-space:nowrap;
   font-size :28px;
-  font-weight:700;
-  line-height: 3.1;
+  font-weight:900;
+  line-height:2.7;
   color:#0C4A6E;
  }
  .subtitle {
    margin:2px 0 0;
    font-size: 14px;
    color: #BAE6FD;
-   line-height: 2.1;
+   line-height:1.2;
  }
 
  .h2{
@@ -126,9 +126,9 @@
   font-size: medium;
 }
 /*--------------------hero------*/
-.cw{
+.hero{
   position:relative;
-  height: 300px;
+  height: 700px;
   overflow:hidden;
 }
 
@@ -194,7 +194,8 @@
   margin-top:20px;
   padding:12px 30px;
   background:#F97316;
-  color:#BAE6FD;
+  color:white;
+  font-weight:600;
   text-decoration: none;
 border-radius: 25px;
 
@@ -226,8 +227,13 @@ border-radius: 25px;
   padding:25px;
   border-radius:15px;
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
+.feature-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
 /*----------sections---------------------*/
 .home-section{
   padding:50px;
@@ -250,7 +256,7 @@ border-radius: 25px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.promotion card h3{
+.promotion-card h3{
   color:#0369A1;
 
 }
