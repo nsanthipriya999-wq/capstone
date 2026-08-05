@@ -1,8 +1,8 @@
 import {useState} from 'react';
 import { useNavigate,Link } from 'react-router';
 import {userLogin} from "../services/api";
-import AdminDashboard from "../pages/AdminDashboard";
-import UserDashboard from "../pages/UserDashboard";
+import AdminDashboard from "./AdminDashboard";
+import UserDashboard from "./UserDashboard";
 
 
 
@@ -48,10 +48,16 @@ try{
        <input type="password" placeholder='Password' value={password}
              onChange={(e)=>setPassword(e.target.value)} required/><br></br>
        <button>Login</button><br></br><br></br>
-       <p>Don't have an account?{""}
+       {/* <p>Don't have an account?{""}
         <Link to ="/signup">SignUp</Link>
        </p>
-    
+     */}
+       <p>Are you a Wash N Go customer? {""}
+        <Link to ="/signup">Join/Login Membership</Link>
+       </p>
+     
+
+
     </form>
     </div>
   );
