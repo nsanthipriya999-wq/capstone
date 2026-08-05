@@ -22,15 +22,15 @@ export default function Home() {
             <section className="hero">
                 <img src={cw} alt="car wash image" className="hero-image"/>
                <div className="hero-content">
-                <h1>
-                    🚗 Wash N Go
-                </h1>
                 <h2>
-                    Fast Service. <span>Premium Care.</span>
+                    🚗 Wash N Go
                 </h2>
+                <h3>
+                    Fast Service. <span>Premium Care.</span>
+                </h3>
 
                 <p>
-                    Experience convenient,professional
+                    Experience convenient, professional
                     and Fast exterior express car cleaning
                     services with Wash N Go.
 
