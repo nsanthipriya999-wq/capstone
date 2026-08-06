@@ -12,8 +12,10 @@ if(!user || user.role!=="admin"){
 
 return(
 <div className="admin-container">
-   <h2>Welcome Admin! </h2>
-
+   <h2>
+    Welcome <span className="admin-text">Admin 🤵🏻‍♂️<div className=""></div></span>
+</h2> 
+   
    <p>Manage Wash N Go Operations</p>
 
    <a href="https://dashboard.everwash.com/#"
