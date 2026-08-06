@@ -24,4 +24,4 @@ export const reviews=[
 
 
 ]
-export default reviews;
+export default reviews

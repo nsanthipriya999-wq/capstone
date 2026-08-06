@@ -1,16 +1,13 @@
 import {useState} from 'react';
 import { useNavigate,Link } from 'react-router';
 import {userLogin} from "../services/api";
-import AdminDashboard from "./AdminDashboard";
-import UserDashboard from "./UserDashboard";
-
-
-
 
 
 export default function Login(){
   
     const navigate=useNavigate();
+
+    //----------state variables-----------------
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
     const [error,setError]=useState("");
@@ -18,47 +15,57 @@ export default function Login(){
 
     async function  handleLogin(e){
         e.preventDefault();
-        console.log("button clicked");
+        setError("");
+
 try{
-    const data=await userLogin(email,password)
-    console.log(data);
+    const data=await userLogin(email,password);
+
+    //---------save admin token----------------
     localStorage.setItem("token",data.token);
     localStorage.setItem("user",JSON.stringify(data.user));
-    if(data.user.role==="admin"){
+    
+    //---------navigate according to the role--------
+    if(data.user.role==="admin")
+        {
         navigate("/admin-dashboard");
     }
     else
-
         {
-
             navigate("/user-dashboard");
         }
     }catch(error){
-        setError(error.message);
+        setError(error.message || "Invalid Credentials");
     }
 }
     return(
       <div className="login-container">
         <h3>Login</h3>
+        {error && (
+          <p style={{color:"red",marginBottom :"10px"}}>{error}</p>
+
+        )}
      <form onSubmit={handleLogin}>
-        <label>Enter your email:</label><br></br>
+        
+        <label>Enter your Email:</label><br></br>
        <input type="email" placeholder='Email' value={email} 
              onChange={(e)=>setEmail(e.target.value)} required/><br></br><br></br>
         <label>Enter your Password:</label><br></br>
        <input type="password" placeholder='Password' value={password}
              onChange={(e)=>setPassword(e.target.value)} required/><br></br>
-       <button>Login</button><br></br><br></br>
+
+       <button type="submit">Login</button><br></br><br></br>
        {/* <p>Don't have an account?{""}
         <Link to ="/signup">SignUp</Link>
        </p>
      */}
-       <p>Are you a Wash N Go customer? {""}
-        <Link to ="/signup">Join/Login Membership</Link>
+      </form>
+       <p>Are you a Wash N Go customer?{" "}
+        <Link to ="/signup">Click here to Join/Login Membership</Link>
        </p>
      
 
 
-    </form>
+   
     </div>
   );
 
