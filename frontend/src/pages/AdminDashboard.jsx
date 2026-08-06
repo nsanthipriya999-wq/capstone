@@ -4,14 +4,14 @@ const user=JSON.parse(localStorage.getItem("user"));
 
 
 return(
-<div className="admind-container">
-   <h2>Welcome Admin </h2>
+<div className="admin-container">
+   <h2>Welcome Admin! </h2>
 
-   <p>Manage Wash n Go Operations</p>
+   <p>Manage Wash N Go Operations</p>
 
    <a href="https://dashboard.everwash.com/#"
        target="_blank"
-        rel="nopener no referer" >
+        rel="nopener noreferer" >
 
         EverWash App </a>
 

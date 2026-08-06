@@ -462,7 +462,51 @@ margin-top:2px;
   font-weight: 700;
   text-decoration: none;
 }
-
+.login-container br{
+  display:none;
+}
 .login-container a:hover{
   text-decoration: underline;
+}
+
+.login-container label{
+  display: block;
+  margin-top:15px ;
+}
+/*---------------admin dashboard----------------*/
+.admin-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.admin-container h2{
+  color:#0284C7;
+  font-size: 2rem;
+  margin-bottom: 15px;;
+}
+
+.admin-container p{
+  color:#374151;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.admin-container a{
+  display: inline-block;
+  padding: 12px 30px;
+  background: #0284C7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.admin-container a:hover{
+  background: #0369A1;
 }
