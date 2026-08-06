@@ -1,3 +1,6 @@
+
+//------------Promotion Schema--------------------------------//
+
 import mongoose from 'mongoose';
 const promotionSchema = new mongoose.Schema(
     {
@@ -26,10 +29,16 @@ const promotionSchema = new mongoose.Schema(
             required: true,
 
         },
-        endDate: {
+        endDate: {              //schema validation for date
 
             type: Date,
             required: true,
+            validate:{
+                validator: function (value){
+                    return value > this.startDate;
+                },
+                message:"End date must be start date",
+            },
 
         },
 

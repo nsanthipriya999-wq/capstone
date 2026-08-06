@@ -1,3 +1,5 @@
+
+//-----------User Schema--------------------------
 import mongoose from 'mongoose';
 const userSchema = new mongoose.Schema(
     {
@@ -9,7 +11,7 @@ const userSchema = new mongoose.Schema(
         },
 
 
-        email: {
+        email: {              //index is created on email 
 
             type: String,
             required: true,
@@ -25,7 +27,7 @@ const userSchema = new mongoose.Schema(
         role: {
             type: String,
             enum: ["admin", "customer"],
-            default: "admin"
+            default: "customer"                       //at present customers are handled by EverWash
         },
 
     },
@@ -36,5 +38,7 @@ const userSchema = new mongoose.Schema(
 
 
 );
+
+
 const User = mongoose.model('user', userSchema);
 export default User;

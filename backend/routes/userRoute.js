@@ -1,8 +1,9 @@
+//---------------------------------------------------userRoute.js-----------------------------
 import express from 'express';
 
 const router = express.Router();
 
-import { registerUser,loginUser } from '../controllers/userController.js';
+import { registerUser, loginUser } from '../controllers/userController.js';
 
 // ----http://localhost:3000/register----------------
 

@@ -1,30 +1,32 @@
+
+//----------------------------serviceRoute.js---------------------------------------------------------
 import express from 'express';
+import { getServices, getServiceById, createService, updateService, deleteService } from '../controllers/serviceController.js';
 
-
-import {getServices,getServiceById,createService,updateService,deleteService } from '../controllers/serviceController.js';
-
+//-------------------------Middleware-------------------------------------------------------------------
 import authMiddleware from "../middleware/authMiddleware.js";
-import adminMiddleware from "../middleware/adminMiddleware.js"
+import adminMiddleware from "../middleware/adminMiddleware.js";
+
 const router = express.Router();
 
 //-------------Public Routes------------------------
 // ----http://localhost:3000/getServices--or getServiceById--------------
 
-router.get("/",getServices);
-router.get("/:id",getServiceById);
+router.get("/", getServices);
+router.get("/:id", getServiceById);
 
 
 //------------Admin Routes------------------------
 // ----http://localhost:3000/createService---------------
 
-router.post('/', authMiddleware,adminMiddleware,createService);
+router.post('/', authMiddleware, adminMiddleware, createService);
 
 // ----http://localhost:3000/updateService----------------
 
-router.patch('/:id', authMiddleware,adminMiddleware,updateService);
+router.patch('/:id', authMiddleware, adminMiddleware, updateService);
 
 // ----http://localhost:3000/deleteService----------------
 
-router.delete('/:id', authMiddleware,adminMiddleware,deleteService);
+router.delete('/:id', authMiddleware, adminMiddleware, deleteService);
 
 export default router;

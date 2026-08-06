@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 
 //------------GET-------Read All Promotions (getPromotions())--------------------
 // ----------------------http://localhost:3000/promotions--	--------------------
+
 export async function getPromotions(req, res) {
     try {                                       //retrieves  full document
         const result = await Promotion.find();
