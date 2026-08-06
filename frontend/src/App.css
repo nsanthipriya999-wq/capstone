@@ -338,23 +338,66 @@ margin-top:2px;
 
 .hero-cards h2{
   margin:0 0 1rem;
-  color:red;
+  color:#2563eb;
   font-size:2rem;
+  
 }
 
 .hero-cards p{
   margin:0 0 1rem;
-  color:#374151;
+  color:#e5e7eb;
+  font-weight:bold;
   line-height:1.6;
 
 }
-.promo{
-  color:#0f766e;
+.promo {
+  color:gold !important;
   font-weight:700;
-  font-size:1.1rem;
+
+  font-size:1.5rem;
 }
 .widget{
   width:100%;
   max-width:1200px;
   margin-top:20px;
 }
+/*----------Sign Up Css-------------------*/
+.signup-container{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+  color:skyblue;
+}
+
+.signup-container h2{
+  color:#0284c7;
+  margin-bottom: 20px;
+
+} 
+
+.signup-container p{
+  color:#374151;
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.signup-container a{
+  display: inline-block;
+  margin: 15px 0 30px;
+  padding: 12px 25px;
+  background: #0284C7;
+  color:white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight:700;
+}
+
+.signup-container a:hover{
+  background:#0369a1;
+
+}
+ 

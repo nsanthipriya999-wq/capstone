@@ -12,7 +12,7 @@ export default function Services(){
      <p >Choose a membership plan and keep your vehicle clean with our 
          subscription services.
          </p>
-     <p className="promo">Free Vaccuum with every wash!!!</p>
+     <p className="promo">Free Vacuum with every wash!!!</p>
      </div>
      </div>
        <div className="widget">

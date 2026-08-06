@@ -12,7 +12,7 @@ export default function EverWashWidget() {
     script.type = "text/javascript";
     script.async = "true";
     script.setAttribute("data-location-id", "41");
-    script.setAttribute("data-style", "gold");
+    script.setAttribute("data-style", "purple");
     document.body.appendChild(script);
     return () => {
       const widget = document.getElementById("ew-widget");
