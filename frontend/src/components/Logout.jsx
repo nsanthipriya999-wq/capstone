@@ -11,7 +11,7 @@ export default function Logout(){
             localStorage.removeItem("token");
             localStorage.removeItem("user");
 
-            //---------redirect to login page----
+            //---------redirect to Home page----
             navigate("/")
          }
             return (
