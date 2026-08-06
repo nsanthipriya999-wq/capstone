@@ -1,5 +1,5 @@
 export default function UserDashboard(){
   return(
-    <div>Hi</div>
+    <div>Hello {username}! Welcome to User Dashboard !</div>
   )
 }
