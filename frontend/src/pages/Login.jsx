@@ -50,7 +50,7 @@ try{
        <input type="email" placeholder='Email' value={email} 
              onChange={(e)=>setEmail(e.target.value)} required/><br></br><br></br>
         <label>Enter your Password:</label><br></br>
-       <input type="password" placeholder='Password' value={password}
+       <input type="password" placeholder='Password' value={password} minLength={6}
              onChange={(e)=>setPassword(e.target.value)} required/><br></br>
 
        <button type="submit">Login</button><br></br><br></br>

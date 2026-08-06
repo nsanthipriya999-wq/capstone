@@ -12,12 +12,14 @@ import { Routes, Route } from "react-router";
 import AdminDashboard from './pages/AdminDashboard.jsx';
 import UserDashboard from './pages/UserDashboard.jsx';
 import "./App.css"
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 export default function App(){
   return(
     <div className='app-container'>
       <Nav />
      <div className='main-container'>
+        <ScrollToTop />
         <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/services" element={<Services />}/>

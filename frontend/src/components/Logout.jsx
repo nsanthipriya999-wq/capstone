@@ -12,7 +12,7 @@ export default function Logout(){
             localStorage.removeItem("user");
 
             //---------redirect to Home page----
-            navigate("/")
+            navigate("/login")
          }
             return (
                 <div>
