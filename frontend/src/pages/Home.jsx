@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { getActivePromotion } from "../services/api";
 import cw from "../assets/cw.jpg";
+import GoogleReviews from "../components/GoogleReviews";
 export default function Home() {
 
     const [promotion, setPromotion] = useState(null);
@@ -134,6 +135,19 @@ export default function Home() {
 
 
                     </section>
+                    {/*---------------------Reviews--------------------------*/}
+
+                    <section className="review-section">
+
+                        <h2>
+                            Want to know what people say about us!
+                        </h2>
+                        
+
+                        
+                            <GoogleReviews />
+                        </section>
+
 
                     {/*---------------------contact---------------------------*/}
 
