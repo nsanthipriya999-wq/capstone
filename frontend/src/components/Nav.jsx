@@ -1,7 +1,8 @@
+//-----------------------------Nav.jsx------------------------------------------------
+
 import { Link } from "react-router";
 import car from "../assets/car.jpg";
-import {MdLogin} from "react-icons/md";
-
+import { MdLogin } from "react-icons/md";                            //React icon for login
 
 //--------------Navigation Component--------------------
 export default function Nav() {
@@ -10,22 +11,23 @@ export default function Nav() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="brand">
-          
-           <img src={car} 
-                alt="Wash n Go Logo" width="20%" 
-                className="logo"/>
+
+          <img src={car}
+            alt="Wash n Go Logo" width="20%"                      //hero image
+            className="logo" />
+            
           <div className="brand-text">
-          <h1 className="logo">
-                Wash N Go 
-          </h1>
-          
-          <p className="subtitle">
-          Where Clean Meets Shine✨
-          
-          </p>
+            <h1 className="logo">
+              Wash N Go
+            </h1>
+
+            <p className="subtitle">
+              Where Clean Meets Shine✨
+
+            </p>
           </div>
         </div>
-        
+
         {/* //-------------------Home ----------------------------- */}
 
         <div className="nav-links">
@@ -54,7 +56,7 @@ export default function Nav() {
             Promotions
           </Link>
 
-          
+
 
           {/* //-------------------Contact Us---------------------------- */}
           <Link
@@ -71,14 +73,14 @@ export default function Nav() {
             SignUp
           </Link>
 
-          {/*----Login-------------------------------------------*/}
-           
+          {/*-------------------------Login-------------------------------------------*/}
+
           <Link
             to="/login"
             className="nav-link"
           >
-             <MdLogin size={15} style={{marginRight:"5px"}} />
-             Login
+            <MdLogin size={15} style={{ marginRight: "5px" }} />                 
+            Login
           </Link>
 
         </div>
