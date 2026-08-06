@@ -535,3 +535,25 @@ margin-top:2px;
 .review-card h3 {
   margin-bottom: .5rem;
 }
+
+/*------Logout Button-------------*/
+.logout-btn{
+  background-color:#e74c3c;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:8 px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  margin-top:20px;
+}
+.logout-btn:hover{
+  background-color:#c0392b;
+  transform:scale(1.05);
+}
+
+.logout-btn:active{
+  transform:scale(0.95);
+}
