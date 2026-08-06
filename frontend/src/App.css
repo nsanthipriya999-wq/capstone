@@ -251,7 +251,7 @@ border-radius: 25px;
   padding:25px;
   border-radius:15px;
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  transition:0.3s;
 }
 
 .feature-card:hover{
@@ -512,13 +512,13 @@ margin-top:2px;
 }
 
 /*-------------review---------------*/
-.reviews-section {
+.review-container {
   padding: 4rem 2rem;
   background: #f8f9fa;
   text-align: center;
 }
 
-.reviews-grid {
+.review-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
