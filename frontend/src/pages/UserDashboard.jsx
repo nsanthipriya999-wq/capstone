@@ -5,9 +5,9 @@ export default function UserDashboard() {
   return (
     <div className="user-container">
       <div className="user-cards">
-        Welcome to User Dashboard !
+       <h2> Welcome to User Dashboard !</h2>
         <div className="user-card">
-          Manage your Wash N Go services and track your activity from your dashboard.
+          <h3>Manage your Wash N Go services and track your activity from your dashboard.</h3>
         </div>
         <div className="user-card">
           <p>Explore our car wash packages and choose the
