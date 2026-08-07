@@ -1,6 +1,6 @@
 //----------------------Not Found Page -----------------------------
 import { Link } from "react-router";
-
+//-----------------Routes other than existing routes redirects to NotFound page---------------------
 export default function Notfound() {
   return (
     <div className="notfound-container">

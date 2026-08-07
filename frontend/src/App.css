@@ -608,3 +608,149 @@
   font-size:1rem;
  }
  
+
+ /*-------   responsive-----------------*/
+ 
+ @media (max-width:768px){
+  .navbar-container{
+    flex-direction: column;
+    padding:15px;
+    gap:15px;;
+  }
+.brand{
+  justify-content: center;
+}
+
+.logo{
+  width:50px;
+  height:50px;
+}
+.brand-text h1{
+  font-size:24px;
+  line-height:1.2;
+}
+
+.subtitle{
+  font-size :12px;
+
+}
+.nav-links{
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+  margin-left:0;
+  width:100%;
+}
+
+nav-link{
+  font-size :16px;
+}
+.hero{
+  height:500px;
+
+}
+
+.hero-content{
+  width:85%;
+  padding:20px;
+}
+.hero h1{
+  font-size:32px;
+}
+
+.hero h2{
+  font-size: 24px;;
+}
+
+.hero p{
+  font-size: 16px;
+
+}
+
+.home-section,
+.features,
+.promotion-section{
+  padding: 30px 15px;
+
+}
+
+.feature-container{
+  flex-direction: column;
+  align-items: center;
+}
+
+feature-card{
+  width:90%;
+  max-width:350px;
+}
+
+.contactus-container{
+  flex-direction:column;
+  align-items:center;
+  padding-bottom:50px;
+}
+
+.contactus-card,
+.facebook card{
+  width:90%;
+  min-height:auto;
+  padding:25px;
+}
+
+.hero-images{
+  height:250px
+}
+
+
+.hero-cards{
+  width:90%;
+  padding: 1.5rem;
+}
+
+.hero-cards h2{
+  font-size :1.5rem;
+}
+
+.signup-container{
+  padding:25px 15px;
+}
+
+
+.signup-container p{
+  width:90%;
+}
+.login-container{
+  padding: 20px;
+  min-height: 80vh;
+}
+
+.login-container form{
+  width:100%;
+  padding:1.5rem;
+}
+
+
+.admin-container{
+  padding: 30px 15px;
+}
+.admin-container h2{
+  font-size: 1.5rem;
+}
+
+.review-container{
+  padding:30px 15px;
+}
+.review-cards{
+  grid-template-columns: 1fr;
+}
+
+.foooter{
+  padding:15px;
+  font-size:14px;
+}
+ 
+ 
+ }
+
+
+ 

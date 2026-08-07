@@ -1,3 +1,5 @@
+
+//-------------------------------------AdminDashboard.jsx----------------------------------------------
 import {Navigate} from "react-router";
 import Logout from "../components/Logout";
 
@@ -18,24 +20,19 @@ return(
    
    <p>Manage Wash N Go Operations</p>
 
-   <a href="https://dashboard.everwash.com/#"
+   <a href="https://dashboard.everwash.com/#"                    //dashboard for carwash owners
        target="_blank"
         rel="nopener noreferer" >
 
         Open EverWash Dashboard </a>
       <br /><br />
-      <Logout />
+      
+      {/* /*logouts the inactive session after 10 min*/ }
 
+      <Logout />                                              
 
 </div>
 
-
-
-
-
-
 );
-
-
 
 }
