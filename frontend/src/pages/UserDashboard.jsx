@@ -1,6 +1,8 @@
+
+//---------------------------------UserDasboard.jsx-----------------------------------------------
 import Services from "../pages/Services.jsx";
 import { Link } from "react-router";
-
+//---------------Customers gets routed to User Dashboard based on the role ---------------------------
 export default function UserDashboard() {
   return (
     <div className="user-container">
