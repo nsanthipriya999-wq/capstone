@@ -1,4 +1,4 @@
-### Wash N Go Car Wash Management System.
+# Wash N Go Car Wash Management System.
 
 ## Project Description
 Wash N Go is a  MERN stack car wash management system designed to provide customers with an easy way to learn about services , access car wash memberships, signup for services.
@@ -37,8 +37,14 @@ Wash N Go operations.
  - Admin dashboard page
 
  - User Dashboard page
- 
+
  - Access Everwash Car wash owner Management Dasboard.
+
+ ## Application Features
+
+ - Responsive user interface
+
+ - Custom 
 
 
 
