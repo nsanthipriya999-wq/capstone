@@ -56,9 +56,9 @@ Wash N Go operations.
 
  - Contact information, business address, and social media links.
 
- # Technologies Used
+ ## Technologies Used
  
-  # Frontend
+  ## Frontend
 
   - React
   - JavaScript
@@ -69,7 +69,7 @@ Wash N Go operations.
   - Axios
   
   
-  # Backend
+  ## Backend
   - Node.js
   - Mongoose
   - MongoDB
@@ -78,39 +78,41 @@ Wash N Go operations.
   - Bcrypt
   - JWT
 
-# Development Tools
+## Development Tools
 
 - Visual Studio code
 - Git
 - GitHub
 - Browser Developer Tools
+- MongoDB Compass
+- Thunder Client
 
-# External Services
+## External Services
 - EverWash Membership Platform
 - EverWash Widget Integration
 
-# Installation
+## Installation
 
 Clone the repository
 
-# git clone <repository-url>
+- git clone <repository-url>
 
 Install project dependencies
 
-# npm install
+- npm install
 
-# Running the Application
+Running the Application
 
 Start the development server frontend
-# npm run dev
+- npm run dev
 
 Start the backend server
-# nodemon index
+- nodemon index
 
 
-# Authentication Flow
+## Authentication Flow
 
-# Customer Authentication
+## Customer Authentication
 
 Wash N Go does not store customer signup or login information.
 
@@ -120,7 +122,59 @@ Customer Flow:
 
 1. Customer visits Wash N gO website.
 
-2. Cus
+2. Customer Signup/Join Membership
+
+3. Customer can explore all services available .
+
+4. Customers can Book the services through services page.
+
+5. Customer can view the active promotions available in promotions page.
+
+
+# Admin Authentication
+
+1. Admin enters login credentials
+2. Application verifies the user's role.
+3. If the user is an adminstrator, they are redirected to the Admin Dashboard.
+4. Admin can access and manage resources through EverWash Integrated Dashboard.
+5. Logout button is provided for session Logout.
+6. Inactive session will be logged out after 10 min and redirected to login page.
+
+
+# Main Pages.
+
+# Home Page
+
+# Services Page
+ Wash N Go services and displays:
+ -Car wash information
+- Membership options
+
+# Promotions Page
+ -- Promotions available
+
+# SignUp Page
+- Various membership options 
+
+# Login Page
+- The Login page provides access for administrators. EverWash is handling customers for now.
+  Features:
+- Email and password authentication
+- Role verification
+- Dashboard navigation
+
+# Admin Dashboard Page
+   The Admin Dashboard provides administrators with access to Wash N Go Management tools.
+
+# User Dasboard Page
+   Redirects to EverWash Platform for booking services.
+
+# Contact Page
+  Provides location details with map ,contact details and social media handles.
+
+
+
+
 
 
  
@@ -128,6 +182,6 @@ Customer Flow:
 
 
 
-
-
+# Project Organisation tools:
+Trello Link: https://trello.com/b/tBmHBlc6/my-trello-board
 
