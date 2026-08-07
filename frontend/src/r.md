@@ -210,7 +210,7 @@ Features:
 
 ---
 
-# Challenges and Solutions
+## Challenges and Solutions
 
 ## EverWash Integration
 

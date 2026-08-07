@@ -131,7 +131,7 @@ Customer Flow:
 5. Customer can view the active promotions available in promotions page.
 
 
-# Admin Authentication
+ ## Admin Authentication
 
 1. Admin enters login credentials
 2. Application verifies the user's role.
@@ -141,35 +141,40 @@ Customer Flow:
 6. Inactive session will be logged out after 10 min and redirected to login page.
 
 
-# Main Pages.
+ ## Main Pages.
 
-# Home Page
+## Home Page
 
-# Services Page
+## Services Page
  Wash N Go services and displays:
  -Car wash information
 - Membership options
 
-# Promotions Page
+## Promotions Page
  -- Promotions available
 
-# SignUp Page
+## SignUp Page
 - Various membership options 
 
-# Login Page
+## Login Page
 - The Login page provides access for administrators. EverWash is handling customers for now.
   Features:
 - Email and password authentication
 - Role verification
 - Dashboard navigation
 
-# Admin Dashboard Page
+## Admin Dashboard Page
    The Admin Dashboard provides administrators with access to Wash N Go Management tools.
+ The Admin Dashboard provides administrators with access to Wash N Go management tools.
 
-# User Dasboard Page
+Features:
+
+- Admin welcome page
+- EverWash management link
+## User Dasboard Page
    Redirects to EverWash Platform for booking services.
 
-# Contact Page
+## Contact Page
   Provides location details with map ,contact details and social media handles.
 
 
@@ -182,6 +187,6 @@ Customer Flow:
 
 
 
-# Project Organisation tools:
+## Project Organisation tools:
 Trello Link: https://trello.com/b/tBmHBlc6/my-trello-board
 
