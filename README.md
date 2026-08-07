@@ -154,7 +154,7 @@ Customer Flow:
  ## Main Pages.
 
 ## Home Page
-
+  The Home Page provides an overview of the platform and serves as the primary entry point for users. It highlights the available services, current promotions, customer reviews, membership information, and support options. Quick links throughout the page allow users to easily navigate to service details, promotional offers, membership plans, and contact resources
 ## Services Page
  Wash N Go services and displays:
  -Car wash information
