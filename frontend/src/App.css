@@ -65,7 +65,7 @@
  }
 
  h2 {
-   color: pink;
+   color:black;
    margin-bottom: 0;
  }
 
@@ -585,3 +585,5 @@
  .logout-btn:active {
    transform: scale(0.95);
  }
+
+ 

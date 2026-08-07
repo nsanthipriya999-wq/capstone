@@ -54,7 +54,78 @@ Wash N Go operations.
 
  - Clean component- based React structure.
 
- -Contact information, business address, and social media links.
+ - Contact information, business address, and social media links.
+
+ # Technologies Used
+ 
+  # Frontend
+
+  - React
+  - JavaScript
+  - HTML5
+  - CSS3
+  - React Router
+  - React Icons
+  - Axios
+  
+  
+  # Backend
+  - Node.js
+  - Mongoose
+  - MongoDB
+  - Express
+  - Dotenv
+  - Bcrypt
+  - JWT
+
+# Development Tools
+
+- Visual Studio code
+- Git
+- GitHub
+- Browser Developer Tools
+
+# External Services
+- EverWash Membership Platform
+- EverWash Widget Integration
+
+# Installation
+
+Clone the repository
+
+# git clone <repository-url>
+
+Install project dependencies
+
+# npm install
+
+# Running the Application
+
+Start the development server frontend
+# npm run dev
+
+Start the backend server
+# nodemon index
+
+
+# Authentication Flow
+
+# Customer Authentication
+
+Wash N Go does not store customer signup or login information.
+
+Customer membership accounts are managed by EverWash.
+
+Customer Flow:
+
+1. Customer visits Wash N gO website.
+
+2. Cus
+
+
+ 
+
+
 
 
 
