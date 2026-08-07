@@ -210,16 +210,6 @@ The application needed membership functionality without storing sensitive custom
 Integrated with EverWash to handle customer signup, login, and membership management.
 
 
-## Responsive Design
-
-### Challenge:
-
-Creating a layout that works across desktop and mobile devices.
-
-### Solution:
-
-Used Flexbox, responsive widths, media queries, and reusable styling patterns.
-
 
 ## Role-Based Navigation
 
@@ -253,11 +243,13 @@ Possible future improvements include:
 - Deploy the application in public domain.
 - Expand admin management features.
 - Connect additional backend services.
+- Rendering live reviews through Google Place API.
 
 ## Deployment Link
 
 
-Render-
+Render- 
+          https://washngospringfield.onrender.com/
 
 
 ## Project Organisation tools:
