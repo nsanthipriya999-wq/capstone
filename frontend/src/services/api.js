@@ -1,6 +1,8 @@
-
+//----------------api.js---handles fetch request-----------------------------------
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
+
+//-----------------retrieves active promotions------------------
 export async function getActivePromotion() {
     try {
         const response = await fetch(`${BASE_URL}/promotions/active`);
@@ -11,6 +13,8 @@ export async function getActivePromotion() {
         console.log(e);
     }
 }
+
+//--------------Login credentials--------------------------------------------------
 export async function userLogin(email,password){
 
     
