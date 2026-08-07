@@ -163,20 +163,9 @@ export default function Home() {
                         </Link>
 
                     </section>
-                
-
-
-
-            
-
-
 
 
         </div>
-
-
-
-
 
 
     );
