@@ -1,8 +1,10 @@
+
+/*--------------------Service.jsx------------*/
 import EverWashWidget from "../components/EverWashWidget";
 import car from "../assets/car2.jpg"
 import  sud from "../assets/Suds.jpg"
 export default function Services(){
-
+//---------------------loads EverWashWidget Component  here----------------------------
   return(
     <div className="services-container">
       <div className="heros">
@@ -14,7 +16,7 @@ export default function Services(){
          </p>
      <p className="promo">Free Vacuum with every wash!!!</p>
      </div>
-     </div>
+     </div>                                    
        <div className="widget">
       <EverWashWidget />
      </div>
