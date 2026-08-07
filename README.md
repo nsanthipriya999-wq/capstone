@@ -221,6 +221,7 @@ Providing different access levels for administrators and customers.
 
 Implemented role checking during login and redirected users based on account type.
 
+admin role is redirected to admin Dashboard whereas customer gets redirected to User Dashboard.
 ---
 
 ## Code Organization and Best Practices
@@ -248,11 +249,11 @@ Possible future improvements include:
 ## Deployment Link
 
 
-Render- 
-          https://washngospringfield.onrender.com/
+Render-   https://washngospringfield.onrender.com/
 
 
 ## Project Organisation tools:
 Trello Link: https://trello.com/b/tBmHBlc6/my-trello-board
+
 
 Thank you!
