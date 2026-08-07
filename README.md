@@ -233,7 +233,7 @@ Implemented role checking during login and redirected users based on account typ
 
 ---
 
-# Code Organization and Best Practices
+## Code Organization and Best Practices
 
 The project follows React development best practices:
 
@@ -246,7 +246,7 @@ The project follows React development best practices:
 
 
 
-# Future Improvements
+## Future Improvements
 
 Possible future improvements include:
 
@@ -254,7 +254,7 @@ Possible future improvements include:
 - Expand admin management features.
 - Connect additional backend services.
 
-# Deployment Link
+## Deployment Link
 
 
 Render-
