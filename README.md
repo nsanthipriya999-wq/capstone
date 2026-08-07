@@ -108,25 +108,25 @@ Method Route Description
 ## User 
   Index is created on an email
 
-POST http://localhost:3000/register
-POST http://localhost:3000/login 
+. POST http://localhost:3000/register
+. POST http://localhost:3000/login 
 
 ## Services:
 
-GET http://localhost:3000/services        Get all services
-GET http://localhost:3000/services/:id    Get a service by ID
-POST http://localhost:3000/services       Add a new service
-PATCH http://localhost:3000/services/:id  Update a service
-DELETE http://localhost:3000/services/:id Delete a service
+. GET http://localhost:3000/services        Get all services
+. GET http://localhost:3000/services/:id    Get a service by ID
+. POST http://localhost:3000/services       Add a new service
+. PATCH http://localhost:3000/services/:id  Update a service
+. DELETE http://localhost:3000/services/:id Delete a service
 
 ## Promotions:
 
-GET http://localhost:3000/promotions          Get all promotions
-GET http://localhost:3000/promotions/active   Get all promotions
-GET http://localhost:3000/promotions/:id      Get a promotion by ID
-POST http://localhost:3000/promotions         Add a new promotion
-PATCH http://localhost:3000/promotions/:id    Update a promotion
-DELETE http://localhost:3000/promotions/:id   Delete a promotion
+. GET http://localhost:3000/promotions          Get all promotions
+. GET http://localhost:3000/promotions/active   Get all promotions
+. GET http://localhost:3000/promotions/:id      Get a promotion by ID
+. POST http://localhost:3000/promotions         Add a new promotion
+. PATCH http://localhost:3000/promotions/:id    Update a promotion
+. DELETE http://localhost:3000/promotions/:id   Delete a promotion
 
 
 ## Installation
@@ -199,7 +199,7 @@ Customer Flow:
  -- Promotions available
 
 ## SignUp Page
-- Various membership options 
+- Various membership options ,Ultimate, Basic, Deluxe , Supreme.
 
 ## Login Page
 - The Login page provides access for administrators. EverWash is handling customers for now.
