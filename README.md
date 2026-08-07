@@ -164,13 +164,11 @@ Customer Flow:
 - Dashboard navigation
 
 ## Admin Dashboard Page
-   The Admin Dashboard provides administrators with access to Wash N Go Management tools.
- The Admin Dashboard provides administrators with access to Wash N Go management tools.
-
+The Admin Dashboard provides administrators with access to Wash N Go Management tools.
 Features:
-
 - Admin welcome page
 - EverWash management link
+
 ## User Dasboard Page
    Redirects to EverWash Platform for booking services.
 
@@ -178,15 +176,81 @@ Features:
   Provides location details with map ,contact details and social media handles.
 
 
+## Challenges and Solutions
+
+## EverWash Integration
+
+### Challenge:
+
+The EverWash widget is loaded through an external script, which limits direct control over the internal widget structure.
+
+### Solution:
+
+Created custom containers and CSS layouts around the widget to maintain consistent spacing and design.
+
+
+## Customer Account Management
+
+### Challenge:
+
+The application needed membership functionality without storing sensitive customer information.
+
+### Solution:
+
+Integrated with EverWash to handle customer signup, login, and membership management.
+
+
+## Responsive Design
+
+### Challenge:
+
+Creating a layout that works across desktop and mobile devices.
+
+### Solution:
+
+Used Flexbox, responsive widths, media queries, and reusable styling patterns.
+
+
+## Role-Based Navigation
+
+### Challenge:
+
+Providing different access levels for administrators and customers.
+
+### Solution:
+
+Implemented role checking during login and redirected users based on account type.
+
+---
+
+# Code Organization and Best Practices
+
+The project follows React development best practices:
+
+  Components are separated into reusable files.
+  Pages are organized by application features.
+  Functions use descriptive names.
+  CSS classes follow consistent naming conventions.
+  External services are separated from UI components.
+  Comments are added where additional explanation is needed
 
 
 
+# Future Improvements
 
- 
+Possible future improvements include:
+
+- Deploy the application in public domain.
+- Expand admin management features.
+- Connect additional backend services.
+
+# Deployment Link
 
 
+Render-
 
 
 ## Project Organisation tools:
 Trello Link: https://trello.com/b/tBmHBlc6/my-trello-board
 
+Thank you!
