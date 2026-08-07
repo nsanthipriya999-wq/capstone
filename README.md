@@ -1,13 +1,12 @@
 # Wash N Go Car Wash Management System.
 
 ## Project Description
-Wash N Go is a  MERN stack car wash management system designed to provide customers with an easy way to learn about available services, explore membership options, and signup for car wash memberships.
+Wash N Go is a MERN stack–based car wash management system designed to provide customers with a seamless and user-friendly experience. The platform enables customers to explore available car wash services, compare membership plans, and conveniently sign up for memberships online.
 
-The application integrates with EverWash to handle customer membership registration and login. Currently, Wash N Go uses EverWash's subscription platform, where membership information and payments are securely managed by EverWash.
+The application integrates with EverWash for customer membership registration, authentication, and subscription management. Membership details, billing, and payment processing are securely handled through EverWash's subscription platform, ensuring a reliable and secure experience for customers.
 
-The application also provides an admin login system that allows administrators to access a dedicated dashboard for 
-Wash N Go operations.
-
+In addition to customer-facing features, Wash N Go includes a secure administrator portal that provides authorized staff with access to a dedicated dashboard for managing day-to-day operations. The admin dashboard supports 
+efficient oversight of the platform and streamlines operational workflows for Wash N Go.
 
 ## Features
 
@@ -95,6 +94,41 @@ Wash N Go operations.
 - EverWash Membership Platform
 - EverWash Widget Integration
 
+
+## Collections
+
+. User
+. Promotion
+. Service
+
+## API Routes
+
+Method Route Description
+
+## User 
+  Index is created on an email
+
+POST http://localhost:3000/register
+POST http://localhost:3000/login 
+
+## Services:
+
+GET http://localhost:3000/services        Get all services
+GET http://localhost:3000/services/:id    Get a service by ID
+POST http://localhost:3000/services       Add a new service
+PATCH http://localhost:3000/services/:id  Update a service
+DELETE http://localhost:3000/services/:id Delete a service
+
+## Promotions:
+
+GET http://localhost:3000/promotions          Get all promotions
+GET http://localhost:3000/promotions/active   Get all promotions
+GET http://localhost:3000/promotions/:id      Get a promotion by ID
+POST http://localhost:3000/promotions         Add a new promotion
+PATCH http://localhost:3000/promotions/:id    Update a promotion
+DELETE http://localhost:3000/promotions/:id   Delete a promotion
+
+
 ## Installation
 
 Environment variables
@@ -154,7 +188,8 @@ Customer Flow:
  ## Main Pages.
 
 ## Home Page
-  The Home Page provides an overview of the platform and serves as the primary entry point for users. It highlights the available services, current promotions, customer reviews, membership information, and support options. Quick links throughout the page allow users to easily navigate to service details, promotional offers, membership plans, and contact resources
+  The Home Page provides an overview of the platform and serves as the primary entry point for users. It highlights the available services, current promotions, customer reviews, membership information, and support options. Quick links throughout the page allow users to easily navigate to service details, promotional offers, membership plans, and contact resources.
+
 ## Services Page
  Wash N Go services and displays:
  -Car wash information
@@ -247,7 +282,6 @@ Possible future improvements include:
 - Rendering live reviews through Google Place API.
 
 ## Deployment Link
-
 
 Render-   https://washngospringfield.onrender.com/
 
