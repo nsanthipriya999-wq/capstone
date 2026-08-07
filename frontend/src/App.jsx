@@ -7,7 +7,7 @@ import Services from "./pages/Services.jsx"
 import Promotions from "./pages/Promotions.jsx"
 import SignUp from "./pages/SignUp.jsx"
 import Contact from "./pages/Contact.jsx"
-import Notfound from './pages/Notfound.jsx';
+import Notfound from './pages/NotFound.jsx';
 import Footer from './components/Footer.jsx';
 import Login from './pages/Login.jsx';
 import { Routes, Route } from "react-router";
@@ -31,7 +31,7 @@ export default function App(){
         <Route path="/login" element={<Login />}/>
         <Route path="/admin-dashboard" element={<AdminDashboard />}/>
         <Route path="/user-dashboard" element={<UserDashboard />}/>
-        <Route path="/*" element={<Notfound />}/>
+        <Route path="/*" element={<NotFound />}/>
 
       </Routes>
       </div>
