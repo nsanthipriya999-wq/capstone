@@ -7,7 +7,7 @@ import Services from "./pages/Services.jsx"
 import Promotions from "./pages/Promotions.jsx"
 import SignUp from "./pages/SignUp.jsx"
 import Contact from "./pages/Contact.jsx"
-import Notfound from './pages/NotFound.jsx';
+import NotFound from './pages/NotFound.jsx';
 import Footer from './components/Footer.jsx';
 import Login from './pages/Login.jsx';
 import { Routes, Route } from "react-router";
