@@ -27,9 +27,9 @@
  .nav-link {
    text-decoration: none;
    color: white;
-   font-weight: 500;
+   font-weight:bold;
+   font-size: large;
    transition: color 0.3s ease;
-
  }
 
  .logo {
@@ -544,7 +544,9 @@
    background: #f8f9fa;
    text-align: center;
  }
-
+.review-container h2{
+  color:gold;
+}
  .review-cards {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -559,7 +561,7 @@
    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
  }
 
- .review-card h3 {
+ .review-card h2 {
    margin-bottom: .5rem;
  }
 
@@ -736,10 +738,20 @@ feature-card{
 .admin-container h2{
   font-size: 1.5rem;
 }
+.review-section h2{
+font-size:2rem;
+color:#0284C7;
+text-align: center;
+}
 
 .review-container{
   padding:30px 15px;
 }
+
+.review-container h2{
+  color:sandybrown;
+}
+
 .review-cards{
   grid-template-columns: 1fr;
 }

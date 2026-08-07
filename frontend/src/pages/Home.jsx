@@ -140,11 +140,7 @@ export default function Home() {
 
                     <section className="review-section">
 
-                        <h2>
-                            Want to know what people say about us!
-                        </h2>
-                        
-
+    
                         
                             <GoogleReviews />
                         </section>

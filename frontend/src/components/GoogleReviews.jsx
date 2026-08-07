@@ -5,7 +5,8 @@ export default function GoogleReviews()
 {
     return (
         <div className="review-container">
-            <h2>Customer Reviews</h2>
+            <h2>Want to know what people say about us!</h2>
+            <h3>Customer Reviews</h3>
             <div className="review-cards">
                 {reviews.map((review) => (
                     <div key={review.name} className="review-card">    
