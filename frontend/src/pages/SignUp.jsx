@@ -1,3 +1,5 @@
+
+//----------------------------------SignUp.jsx for customers to join/Login  Membership------------------
 import EverWashWidget from "../components/EverWashWidget";
 
 export default function SignUp() {
