@@ -67,7 +67,9 @@ Wash N Go operations.
   - React Router
   - React Icons
   - Axios
-  
+  - React Hooks 
+  - Vite
+  - Sticky Navigation
   
   ## Backend
   - Node.js
@@ -77,6 +79,7 @@ Wash N Go operations.
   - Dotenv
   - Bcrypt
   - JWT
+  - Local Storage
 
 ## Development Tools
 
@@ -87,11 +90,18 @@ Wash N Go operations.
 - MongoDB Compass
 - Thunder Client
 
+
 ## External Services
 - EverWash Membership Platform
 - EverWash Widget Integration
 
 ## Installation
+
+Environment variables
+
+Get your own MONGODB connection string  and save it in .env file.
+
+-An .env-example has the list of environment variables used in the project
 
 Clone the repository
 
